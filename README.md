@@ -1,1 +1,5 @@
 # leetcode
+
+* Java
+* Python
+* Golang
