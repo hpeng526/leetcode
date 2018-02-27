@@ -5,7 +5,7 @@ class Solution {
         int res = 0;
         for(int i=0; i<s.length(); i++) {
             if (i>0 && convert(s.charAt(i)) > convert(s.charAt(i-1))) {
-                res = res - convert(s.charAt(i-1)) + (convert(s.charAt(i-1))-convert(s.charAt(i)));
+                res = res - convert(s.charAt(i-1)) + (convert(s.charAt(i)) - convert(s.charAt(i-1)));
             } else {
                 res += convert(s.charAt(i));
             }
